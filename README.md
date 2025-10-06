@@ -2,4 +2,4 @@
 Realizado por Edsel Lopez
 
 #Vista inicial Home
-![Imagen Home](./wwwwroot/css/Home.png)
+![Imagen Home](./wwwroot/css/Home.png)
