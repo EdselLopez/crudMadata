@@ -1,0 +1,22 @@
+﻿@model ContactoModel
+
+<h2>Eliminar contacto</h2>
+
+<div class="alert alert-danger">
+    ¿Estás seguro que deseas eliminar este contacto?
+</div>
+
+<div class="mb-3">
+    <strong>Nombre:</strong> @Model.NombreCompleto<br />
+    <strong>Dirección:</strong> @Model.Direccion<br />
+    <strong>Teléfono:</strong> @Model.Telefono<br />
+    <strong>Correo:</strong> @Model.CorreoElectronico
+</div>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">
+        <i class="fas fa-trash-alt"></i> Confirmar eliminación
+    </button>
+    <a asp-action="Index" class="btn btn-outline-secondary">Cancelar</a>
+</form>

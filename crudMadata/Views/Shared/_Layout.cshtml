@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD Madata</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/crudMadata.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/style.css" />        
+    <link rel="shortcut icon" href="https://madata.com/hubfs/C%C3%ADrculo%20M%20Madata.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>   
+    <div class="wrapper d-flex align-items-stretch">
+        <nav id="sidebar">
+            <div class="custom-menu">
+                <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                    <i class="fa fa-bars"></i>
+                    <span class="sr-only">Toggle Menu</span>
+                </button>
+            </div>
+            <h1><a href="@Url.Action("Index", "Home")" class="logo">Madata CRUD</a></h1>
+            <ul class="list-unstyled components mb-5">
+                <li class="active">
+                    
+                    <a asp-controller="Home" asp-action="Index">
+                        <span class="fa fa-home mr-3"></span> Home
+                    </a>
+
+                </li>
+                <li>
+                    <a asp-controller="Contacto" asp-action="Index">
+                        <span class="fa fa-users mr-3"></span> Listado de Clientes
+                    </a>                    
+                </li>
+                <li>
+                   <a asp-controller="Contacto" asp-action="Create">
+                        <span class="fa fa-user-plus mr-3 text-success"></span> Cliente Nuevo
+                    </a>
+                </li>
+                @*<li>
+                    <a href="#"><span class="fa fa-sticky-note mr-3"></span> Modificar Cliente</a>
+                    <a href="#"><span class="fa fa-user-edit mr-3 text-warning"></span> Modificar Cliente</a>
+                </li>
+                <li>
+                    @*<a href="#"><span class="fa fa-paper-plane mr-3"></span> Borrar Cliente</a>
+                    <a href="#"><span class="fa fa-user-minus mr-3 text-danger"></span> Borrar Cliente</a>
+                </li>                *@
+            </ul>
+        </nav>    
+    
+        <div id ="content" class="container p-4 p-md-5 pt-5">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+    </div>
+    <footer class="footer text-muted">
+        <div style="text-align:center;" >
+            &copy; 2025 - crudMadata - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
