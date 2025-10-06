@@ -8328,5 +8328,25 @@ a[data-toggle="collapse"] {
     /* Firefox 18- */
     color: rgba(255, 255, 255, 0.5); }
 
+
 .subscribe-form .form-control {
   background: #4897fc; }
+input.custom-border {
+    border: 2px solid #198754;
+    border-radius: 6px;
+    padding: 8px;
+}
+
+input.custom-border-success {
+    border-color: #198754; 
+}
+
+
+input.custom-border-warning {
+    border-color: #ffc107;
+}
+
+
+input.custom-border-danger {
+    border-color: #dc3545; 
+}
