@@ -1,4 +1,6 @@
 # Proyecto CRUD Basico Madata
+Proyecto ASP.NET Core MVC 
+Entity Framework con  DB Postgres
 Realizado por Edsel Lopez
 
 # Vista inicial Home
