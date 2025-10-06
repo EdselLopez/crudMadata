@@ -2,4 +2,6 @@
 Realizado por Edsel Lopez
 
 #Vista inicial Home
-![Imagen Home](./wwwroot/css/Home.png)
+![Imagen Home](crudMadata/wwwroot/css/Home.png)
+
+
