@@ -15,6 +15,10 @@ Listado Vacio
 Listado
 ![ImagenListado](crudMadata/wwwroot/css/ListadoClientes.png)
 
+# Nuevo Cliente 
+Crear Cliente
+![ImagenNuevo](crudMadata/wwwroot/css/NuevoCliente.png)
+
 # Modificado para Clientes 
 Modificar Cliente
 ![ImagenEdit](crudMadata/wwwroot/css/EditCliente.png)
